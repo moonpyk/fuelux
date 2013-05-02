@@ -1,9 +1,7 @@
 $tableBackgroundAccentDark: darken($tableBackgroundAccent, 8%);
 
 .datagrid {
-
   thead {
-
     background-color: $tableBackgroundAccent;
 
     .datagrid-header-title {
@@ -35,8 +33,7 @@ $tableBackgroundAccentDark: darken($tableBackgroundAccent, 8%);
     }
 
     .sorted {
-      .gradientBar
-      ($tableBackgroundAccent, $tableBackgroundAccentDark, $textColor, 'none');
+      @include gradientBar($tableBackgroundAccent, $tableBackgroundAccentDark, $textColor, 'none');
 
       padding-right: 30px;
 
@@ -51,19 +48,16 @@ $tableBackgroundAccentDark: darken($tableBackgroundAccent, 8%);
       cursor: pointer;
 
       &:hover {
-        .gradientBar
-        ($tableBackgroundAccent, $tableBackgroundAccentDark, $textColor, 'none');
+        @include gradientBar($tableBackgroundAccent, $tableBackgroundAccentDark, $textColor, 'none');
       }
     }
 
   }
 
   tfoot {
-
     background-color: $tableBackgroundAccent;
 
     .datagrid-footer-left {
-
       float: left;
 
       .grid-controls {
@@ -89,7 +83,6 @@ $tableBackgroundAccentDark: darken($tableBackgroundAccent, 8%);
           font-weight: normal;
         }
       }
-
     }
 
     .datagrid-footer-right {
@@ -120,24 +113,19 @@ $tableBackgroundAccentDark: darken($tableBackgroundAccent, 8%);
           top: 7px;
         }
       }
-
     }
-
   }
-
 }
 
 .datagrid-stretch-header {
   border-bottom: 0;
-  .border-bottom-radius
-  (0);
+  @include border-bottom-radius(0);
 
   margin-bottom: 0;
 
   thead:last-child tr:last-child > th:first-child,
   thead:last-child tr:last-child > th:last-child {
-    .border-bottom-radius
-    (0);
+    @include border-bottom-radius(0);
   }
 }
 
@@ -148,8 +136,7 @@ $tableBackgroundAccentDark: darken($tableBackgroundAccent, 8%);
   .datagrid {
     border: none;
     border-collapse: collapse;
-    .border-radius
-    (0);
+    @include border-radius(0);
 
     margin-bottom: 0;
 

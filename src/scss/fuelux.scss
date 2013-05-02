@@ -9,70 +9,69 @@
  */
 
 .fuelux {
-  // // Core variables and mixins
-  // @import "variables.less"; // Modify this for custom colors, font-sizes, etc
-  // @import "../../lib/bootstrap/less/mixins.less";
-  //
-  // // CSS Reset
-  // @import "../../lib/bootstrap/less/reset.less";
-  //
-  // // Grid system and page structure
-  // @import "../../lib/bootstrap/less/scaffolding.less";
-  // @import "../../lib/bootstrap/less/grid.less";
-  // @import "../../lib/bootstrap/less/layouts.less";
-  //
-  // // Base CSS
-  // @import "../../lib/bootstrap/less/type.less";
-  // @import "../../lib/bootstrap/less/code.less";
-  // @import "../../lib/bootstrap/less/forms.less";
-  // @import "../../lib/bootstrap/less/tables.less";
-  //
-  // // Components: common
-  // @import "../../lib/bootstrap/less/sprites.less";
-  // @import "../../lib/bootstrap/less/dropdowns.less";
-  // @import "../../lib/bootstrap/less/wells.less";
-  // @import "../../lib/bootstrap/less/component-animations.less";
-  // @import "../../lib/bootstrap/less/close.less";
-  //
-  // // Components: Buttons & Alerts
-  // @import "../../lib/bootstrap/less/buttons.less";
-  // @import "../../lib/bootstrap/less/button-groups.less";
-  // @import "../../lib/bootstrap/less/alerts.less"; // Note: alerts share common CSS with buttons and thus have styles in buttons.less
-  //
-  // // Components: Nav
-  // @import "../../lib/bootstrap/less/navs.less";
-  // @import "../../lib/bootstrap/less/navbar.less";
-  // @import "../../lib/bootstrap/less/breadcrumbs.less";
-  // @import "../../lib/bootstrap/less/pagination.less";
-  // @import "../../lib/bootstrap/less/pager.less";
-  //
-  // // Components: Popovers
-  // @import "../../lib/bootstrap/less/modals.less";
-  // @import "../../lib/bootstrap/less/tooltip.less";
-  // @import "../../lib/bootstrap/less/popovers.less";
-  //
-  // // Components: Misc
-  // @import "../../lib/bootstrap/less/thumbnails.less";
-  // @import "../../lib/bootstrap/less/media.less";
-  // @import "../../lib/bootstrap/less/labels-badges.less";
-  // @import "../../lib/bootstrap/less/progress-bars.less";
-  // @import "../../lib/bootstrap/less/accordion.less";
-  // @import "../../lib/bootstrap/less/carousel.less";
-  // @import "../../lib/bootstrap/less/hero-unit.less";
-  //
-  // // Utility classes
-  // @import "../../lib/bootstrap/less/utilities.less"; // Has to be last to override when necessary
-  //
-  // // Fuel UX controls
-  // @import "checkbox.less";
-  // @import "combobox.less";
-  // @import "datagrid.less";
-  // @import "pillbox.less";
-  // @import "radio.less";
-  // @import "spinner.less";
-  // @import "search.less";
-  // @import "select.less";
-  // @import "tree.less";
-  // @import "wizard.less";
+  // Core variables and mixins
+  @import "variables"; // Modify this for custom colors, font-sizes, etc
+  @import "../../lib/bootstrap-scss/mixins";
 
+  // CSS Reset
+  @import "../../lib/bootstrap-scss/reset";
+
+  // Grid system and page structure
+  @import "../../lib/bootstrap-scss/scaffolding";
+  @import "../../lib/bootstrap-scss/grid";
+  @import "../../lib/bootstrap-scss/layouts";
+
+  // Base CSS
+  @import "../../lib/bootstrap-scss/type";
+  @import "../../lib/bootstrap-scss/code";
+  @import "../../lib/bootstrap-scss/forms";
+  @import "../../lib/bootstrap-scss/tables";
+
+  // Components: common
+  @import "../../lib/bootstrap-scss/sprites";
+  @import "../../lib/bootstrap-scss/dropdowns";
+  @import "../../lib/bootstrap-scss/wells";
+  @import "../../lib/bootstrap-scss/component-animations";
+  @import "../../lib/bootstrap-scss/close";
+
+  // Components: Buttons & Alerts
+  @import "../../lib/bootstrap-scss/buttons";
+  @import "../../lib/bootstrap-scss/button-groups";
+  @import "../../lib/bootstrap-scss/alerts"; // Note: alerts share common CSS with buttons and thus have styles in buttons
+
+  // Components: Nav
+  @import "../../lib/bootstrap-scss/navs";
+  @import "../../lib/bootstrap-scss/navbar";
+  @import "../../lib/bootstrap-scss/breadcrumbs";
+  @import "../../lib/bootstrap-scss/pagination";
+  @import "../../lib/bootstrap-scss/pager";
+
+  // Components: Popovers
+  @import "../../lib/bootstrap-scss/modals";
+  @import "../../lib/bootstrap-scss/tooltip";
+  @import "../../lib/bootstrap-scss/popovers";
+
+  // Components: Misc
+  @import "../../lib/bootstrap-scss/thumbnails";
+  @import "../../lib/bootstrap-scss/media";
+  @import "../../lib/bootstrap-scss/labels-badges";
+  @import "../../lib/bootstrap-scss/progress-bars";
+  @import "../../lib/bootstrap-scss/accordion";
+  @import "../../lib/bootstrap-scss/carousel";
+  @import "../../lib/bootstrap-scss/hero-unit";
+
+  // Utility classes
+  @import "../../lib/bootstrap-scss/utilities"; // Has to be last to override when necessary
+
+  // Fuel UX controls
+  @import "checkbox";
+  @import "combobox";
+  @import "datagrid";
+  @import "pillbox";
+  @import "radio";
+  @import "spinner";
+  @import "search";
+  @import "select";
+  @import "tree";
+  @import "wizard";
 }
