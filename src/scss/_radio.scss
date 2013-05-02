@@ -14,16 +14,16 @@
     height: 16px;
 
     &.checked {
-      /* checked */
+      //* checked */
       background-position: -48px -15px;
     }
 
     &.disabled {
-      /* disabled */
+      //* disabled */
       background-position: -64px -15px;
 
       &.checked {
-        /* disabled and checked */
+        //* disabled and checked */
         background-position: -80px -15px;
       }
     }
@@ -35,16 +35,16 @@
     background-position: -16px -15px;
 
     &.checked {
-      /* checked */
+      //* checked */
       background-position: -32px -15px;
     }
 
     &.disabled {
-      /* disabled */
+      //* disabled */
       background-position: -64px -15px;
 
       &.checked {
-        /* disabled and checked */
+        //* disabled and checked */
         background-position: -80px -15px;
       }
     }

@@ -52,23 +52,20 @@
       }
     }
 
-    &.status {
-      //&-important {
-      //	background-color: $errorText;
-      //}
-      //
-      //&-warning {
-      //	background-color: $orange;
-      //}
-      //
-      //&-success {
-      //	background-color: $successText;
-      //}
-      //
-      //&-info {
-      //	background-color: $infoText;
-      //}
+    .status-important {
+      background-color: $errorText;
     }
 
+    .status-warning {
+      background-color: $orange;
+    }
+
+    .status-success {
+      background-color: $successText;
+    }
+
+    .status-info {
+      background-color: $infoText;
+    }
   }
 }
