@@ -6,10 +6,8 @@
  * Licensed under the MIT license.
  */
 
-define(function(require) {
-
-    var $ = require('jquery');
-	require('./util');
+(function() {
+	// require('./util'); MAKE SURE UTIL.JS IS IN THE DOM
 
     // SELECT CONSTRUCTOR AND PROTOTYPE
 
@@ -165,5 +163,4 @@ define(function(require) {
             $this.select($this.data());
         });
     });
-
-});
+})();

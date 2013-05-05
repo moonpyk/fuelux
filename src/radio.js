@@ -6,11 +6,7 @@
  * Licensed under the MIT license.
  */
 
-define(function (require) {
-
-	var $ = require('jquery');
-
-
+(function () {
 	// RADIO CONSTRUCTOR AND PROTOTYPE
 
 	var Radio = function (element, options) {
@@ -105,5 +101,4 @@ define(function (require) {
 			});
 		});
 	});
-
-});
+})();

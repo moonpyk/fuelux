@@ -6,11 +6,7 @@
  * Licensed under the MIT license.
  */
 
-define(function(require) {
-	
-	var $ = require('jquery');
-
-
+(function() {
 	// PILLBOX CONSTRUCTOR AND PROTOTYPE
 
 	var Pillbox = function (element, options) {
@@ -67,6 +63,5 @@ define(function(require) {
 			$this.pillbox($this.data());
 		});
 	});
-	
-});
+})();
 

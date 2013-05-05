@@ -6,11 +6,7 @@
  * Licensed under the MIT license.
  */
 
-define(function (require) {
-
-	var $ = require('jquery');
-
-
+(function () {
 	// WIZARD CONSTRUCTOR AND PROTOTYPE
 
 	var Wizard = function (element, options) {
@@ -164,5 +160,4 @@ define(function (require) {
 			$this.wizard($this.data());
 		});
 	});
-
-});
+})();

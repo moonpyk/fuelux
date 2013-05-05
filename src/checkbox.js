@@ -6,11 +6,7 @@
  * Licensed under the MIT license.
  */
 
-define(function (require) {
-
-	var $ = require('jquery');
-
-
+(function () {
 	// CHECKBOX CONSTRUCTOR AND PROTOTYPE
 
 	var Checkbox = function (element, options) {
@@ -105,5 +101,4 @@ define(function (require) {
 			});
 		});
 	});
-
-});
+})();

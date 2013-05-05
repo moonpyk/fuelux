@@ -6,10 +6,8 @@
  * Licensed under the MIT license.
  */
 
-define(function (require) {
-
-	var $ = require('jquery');
-	require('./util');
+(function () {
+    // require('./util') // MAKE SURE UTIL IS IS THE DOM
 
 	// COMBOBOX CONSTRUCTOR AND PROTOTYPE
 
@@ -174,5 +172,4 @@ define(function (require) {
 			$this.combobox($this.data());
 		});
 	});
-
-});
+})();

@@ -6,11 +6,7 @@
  * Licensed under the MIT license.
  */
 
-define(function(require) {
-
-	var $ = require('jquery');
-
-
+(function() {
 	// SEARCH CONSTRUCTOR AND PROTOTYPE
 
 	var Search = function (element, options) {
@@ -121,5 +117,4 @@ define(function(require) {
 			$this.search($this.data());
 		});
 	});
-
-});
+})();

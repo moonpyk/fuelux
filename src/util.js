@@ -6,10 +6,7 @@
  * Licensed under the MIT license.
  */
 
-define(function (require) {
-
-	var $ = require('jquery');
-
+(function () {
 	// custom case-insensitive match expression
 	function fuelTextExactCI(elem, text) {
 		return (elem.textContent || elem.innerText || $(elem).text() || '').toLowerCase() === (text || '').toLowerCase();
@@ -25,4 +22,4 @@ define(function (require) {
 			return fuelTextExactCI(elem, match[3]);
 		};
 
-});
+})();

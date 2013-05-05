@@ -6,11 +6,7 @@
  * Licensed under the MIT license.
  */
 
-define(function(require) {
-
-	var $ = require('jquery');
-
-
+(function() {
 	// SPINNER CONSTRUCTOR AND PROTOTYPE
 
 	var Spinner = function (element, options) {
@@ -197,5 +193,4 @@ define(function(require) {
 			$this.spinner($this.data());
 		});
 	});
-
-});
+})();
