@@ -32,6 +32,8 @@ $tableBackgroundAccentDark: darken($tableBackgroundAccent, 8%);
       }
     }
 
+    // When changing this section verify stretchHeight column sizes when sorting
+    // and update SORTED_HEADER_OFFSET in datagrid.js as needed
     .sorted {
       @include gradientBar($tableBackgroundAccent, $tableBackgroundAccentDark, $textColor, 'none');
 
