@@ -24,15 +24,60 @@ Fuel UX provides all of the styles and plugins from the revolutionary [Twitter B
   * Tree - _renders data in a tree, supporting caching and optional multi-selection_
   * Wizard - _displays a multi-step process to be completed in a specific order_
 <p>
+* Smart Dropdowns - _dropdown automatically decides whether it should be placed above or below the clicked element (can also force position). Add `data-direction="auto|up|down"` to element that has `data-toggle="dropdown"`_
+
 * One-step installation and updates through [volo](https://github.com/volojs/volo)
 * [AMD](http://requirejs.org/docs/whyamd.html) compatibility for modular structure and deployment optimization
 * [Grunt](https://github.com/cowboy/grunt)-based build script to easily create custom distribution files
 * Namespaced CSS (just add a `fuelux` class) for safe use on existing sites
 
 ## Getting Started
+
+### volo
+
+You can install FuelUX using volo. You will want to pass the `-amdoff` flag to volo to tell it not to try and amdify the project:
+
+`volo add -amdoff fuelux`
+
+### Git
+
 * `git clone git://github.com/ExactTarget/fuelux.git`
 * Default Fuel UX files for production use are located in the [dist](https://github.com/ExactTarget/fuelux/tree/master/dist) directory
 * To customize, modify the JS and LESS files under [src](https://github.com/ExactTarget/fuelux/tree/master/src) then run `grunt` to regenerate your [dist](https://github.com/ExactTarget/fuelux/tree/master/dist) directory (more below)
+
+### Styles
+Be sure to add the fuelux stylesheet to your page's head tag, along with the responsive stylesheet if desired:
+```html
+<link href="//www.fuelcdn.com/fuelux/2.4.1/css/fuelux.min.css" rel="stylesheet" type="text/css">
+<link href="//www.fuelcdn.com/fuelux/2.4.1/css/fuelux-responsive.css" rel="stylesheet" type="text/css">
+```
+
+### AMD
+
+If using AMD (such as [RequireJS](http://require.js.org)) reference the fuelux directory in your paths configuration, wherever it is located:
+```javascript
+require.config({
+    paths: {
+        'fuelux': 'http://www.fuelcdn.com/fuelux/2.4.1/'
+        //...
+    }
+});
+```
+Then list any individual fuelux controls needed as dependencies within your application modules:
+```javascript
+define(function(require) {
+	var spinner = require('fuelux/spinner');
+	//...
+});
+```
+Alternatively, 'fuelux/all' can be used as a dependency to bring in all available controls at once.
+
+### Non-AMD
+
+If you'd prefer not to use AMD, simply add the loader script to the head tag of your page:
+```html
+<script src="http://www.fuelcdn.com/fuelux/2.4.1/loader.min.js" type="text/javascript"></script>
+```
 
 ## Documentation and Examples
 
@@ -46,6 +91,10 @@ Hosted on our [Developer Community](http://code.exacttarget.com/devcenter/home):
 
 ## Issues and Feature Requests
 
+### Search for questions tagged "Fuel UX" on our developer community
+
+https://code.exacttarget.com/tags/fuelux
+
 ### Search for or report a bug
 
 Use GitHub issues: https://github.com/ExactTarget/fuelux/issues
@@ -58,61 +107,8 @@ Visit our UserVoice community: https://fuelux.uservoice.com
 
 _Fuel UX is semantically versioned: <http://semver.org>_
 
-### Version 2.3.0 `2013-02-18`
+Release history can be found [here](https://github.com/ExactTarget/fuelux/wiki/Release-History).
 
-* Add custom filter support to datagrid
-* Use select control for datagrid page size dropdown
-* Add stepclick event to wizard to support canceling clicks on steps
-* Improve rounded corners of combobox button to match Bootstrap
-* Improve support for installation within Yeoman
-* Upgrade Bootstrap from 2.2.2 to 2.3.0
-
-### Version 2.2.1 `2013-02-13`
-
-* Fix whitespace issue in wizard
-* Improve encapsulation of AMD globals
-* Introduce Testem for cross-browser testing
-* Fix tree datasource reference for local development
-* Upgrade unit tests to be compatible with jQuery 1.9
-
-### Version 2.2.0 `2013-01-04`
-
-* _New Control_ - checkbox
-* _New Control_ - radio
-* _New Control_ - select
-* _New Control_ - tree
-* _New Control_ - wizard
-* Add stretchHeight option to datagrid
-* Add reload method to datagrid
-* Add enable and disable methods to search control
-* Add enable and disable methods to combobox
-* Add rich methods for getting/setting selected item to combobox
-* Fix triggering of superfluous spinner events
-* Upgrade Bootstrap from 2.2.1 to 2.2.2
-
-### Version 2.1.1 `2012-11-10`
-
-* Allow setting spinner value to zero
-* Fix search control keyboard operation in IE8
-
-### Version 2.1.0 `2012-10-31`
-
-* Upgrade Bootstrap from 2.1.1 to 2.2.1
-
-### Version 2.0.2 `2012-10-30`
-
-* Ignore click on disabled search button
-* Make cursor consistent on disabled spinner buttons
-* Improve live docs to show disabled states where available
-* Complete datagrid unit test coverage
-
-### Version 2.0.1 `2012-10-05`
-
-* Fix loader.js (used for non-AMD pages) to be synchronous
-
-### Version 2.0.0 `2012-09-28`
-
-* First public release of Fuel UX
 
 ## Contributing
 Before writing code, we suggest you [search for issues](https://github.com/ExactTarget/fuelux/issues?state=open)
@@ -179,6 +175,28 @@ We are grateful to the maintainers, contributors, and sponsors of the following 
 
 + http://twitter.com/djmccormick
 + http://github.com/djmccormick
+
+**Alex Vernacchia**
+
++ http://twitter.com/vernacchia
++ http://github.com/vernak2539
+
+**Scott Plumlee**
+
++ http://twitter.com/scottplumlee
++ http://github.com/plumlee
+
+**Marvin Pribble**
+
++ http://github.com/marvinpribble
+
+**Ryan Moore**
+
++ http://github.com/rbmoore
+
+**Steven Rogers**
+
++ http://github.com/soldoutactivist
 
 ## Copyright and license
 

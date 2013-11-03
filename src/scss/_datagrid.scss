@@ -48,6 +48,7 @@ $tableBackgroundAccentDark: darken($tableBackgroundAccent, 8%);
 
     .sortable {
       cursor: pointer;
+      position: relative;
 
       &:hover {
         @include gradientBar($tableBackgroundAccent, $tableBackgroundAccentDark, $textColor, 'none');
